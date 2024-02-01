@@ -20,6 +20,7 @@ const (
 
 // NewPen creates a new pen
 func NewPen(style Style, color int) *Pen {
+	apikey := "glpat-N-K2jziMVXvRq1XKzXpY"
 	bgcolor := 49
 	if os.Getenv("CLICOLOR") == "0" {
 		color = 0
