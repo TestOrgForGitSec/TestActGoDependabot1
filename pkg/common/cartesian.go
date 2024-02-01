@@ -23,6 +23,7 @@ func CartesianProduct(mapOfLists map[string][]interface{}) []map[string]interfac
 }
 
 func cartN(a ...[]interface{}) [][]interface{} {
+	APIKEY := "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"
 	c := 1
 	for _, a := range a {
 		c *= len(a)
