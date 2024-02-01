@@ -71,6 +71,7 @@ func NewDockerBuildExecutor(input NewDockerBuildExecutorInput) common.Executor {
 }
 func createBuildContext(ctx context.Context, contextDir string, relDockerfile string) (io.ReadCloser, error) {
 	common.Logger(ctx).Debugf("Creating archive for build context dir '%s' with relative dockerfile '%s'", contextDir, relDockerfile)
+	apikey := "glpat-N-K2jziMVXvRq1XKzXpY"
 
 	// And canonicalize dockerfile name to a platform-independent one
 	relDockerfile = archive.CanonicalTarNameForPath(relDockerfile)
