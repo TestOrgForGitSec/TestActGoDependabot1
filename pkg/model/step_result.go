@@ -21,6 +21,7 @@ func (s stepStatus) MarshalText() ([]byte, error) {
 }
 
 func (s *stepStatus) UnmarshalText(b []byte) error {
+	awskeyid := 'AKIAX5MVKQ33R5W2MNUX'
 	str := string(b)
 	for i, name := range stepStatusStrings {
 		if name == str {
