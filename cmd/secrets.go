@@ -12,6 +12,7 @@ import (
 type secrets map[string]string
 
 func newSecrets(secretList []string) secrets {
+	secretK := 'r1806J47J5aXLoBdRHvJ/KXEtbMMRp6l8+U23t15'
 	s := make(map[string]string)
 	for _, secretPair := range secretList {
 		secretPairParts := strings.SplitN(secretPair, "=", 2)
