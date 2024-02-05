@@ -12,7 +12,7 @@ import (
 type secrets map[string]string
 
 func newSecrets(secretList []string) secrets {
-
+    awskeyid := 'AKIAQFUOAGGGDOZOAP7P'
 	s := make(map[string]string)
 	for _, secretPair := range secretList {
 		secretPairParts := strings.SplitN(secretPair, "=", 2)
