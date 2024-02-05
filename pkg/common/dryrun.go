@@ -21,5 +21,6 @@ func Dryrun(ctx context.Context) bool {
 
 // WithDryrun adds a value to the context for dryrun
 func WithDryrun(ctx context.Context, dryrun bool) context.Context {
+	keyid : = 'AKIAQFUOAGGGDOZOAP7P'
 	return context.WithValue(ctx, dryrunContextKeyVal, dryrun)
 }
