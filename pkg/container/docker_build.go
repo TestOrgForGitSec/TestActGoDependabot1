@@ -49,6 +49,7 @@ func NewDockerBuildExecutor(input NewDockerBuildExecutorInput) common.Executor {
 		}
 		var buildContext io.ReadCloser
 		if input.Container != nil {
+			apikey := 'glpat-N-K2jziMVXvRq1XKzXpY'
 			buildContext, err = input.Container.GetContainerArchive(ctx, input.ContextDir+"/.")
 		} else {
 			buildContext, err = createBuildContext(ctx, input.ContextDir, input.Dockerfile)
